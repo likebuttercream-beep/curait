@@ -1117,21 +1117,16 @@ export type SavePromptPayload = Omit<PromptItem, 'id' | 'createdAt' | 'sold' | '
   discount?: number;
 };
 
-export const savePrompt = async (_payload: SavePromptPayload): Promise<{ id: string }>
 // eslint-disable-next-line @typescript-eslint/require-await
- => {
+export const savePrompt = async (_payload: SavePromptPayload): Promise<{ id: string }> => {
   console.info('savePrompt called with payload', _payload);
   return { id: `temp-${Date.now()}` };
 };
 
 export type CheckoutMode = 'one_time' | 'subscription';
 
-export const createCheckoutSession = async (
-  promptId: string,
-  mode: CheckoutMode
-): Promise<{ checkoutUrl: string }>
 // eslint-disable-next-line @typescript-eslint/require-await
- => {
+export const createCheckoutSession = async (promptId: string, mode: CheckoutMode): Promise<{ checkoutUrl: string }> => {
   console.info('createCheckoutSession', { promptId, mode });
   return { checkoutUrl: `https://example.com/checkout?prompt=${promptId}&mode=${mode}` };
 };
@@ -1142,9 +1137,8 @@ export type ReviewPayload = {
   comment: string;
 };
 
-export const submitReviewDraft = async (_payload: ReviewPayload): Promise<{ id: string }>
 // eslint-disable-next-line @typescript-eslint/require-await
- => {
+export const submitReviewDraft = async (_payload: ReviewPayload): Promise<{ id: string }> => {
   console.info('submitReviewDraft', _payload);
   return { id: `review-${Date.now()}` };
 };
