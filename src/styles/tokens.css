@@ -1,0 +1,6 @@
+:root {
+  --radius-2xl: 1.5rem;
+  --color-brand-black: #0a0a0a;
+  --color-brand-white: #ffffff;
+  --shadow-subtle: 0 20px 40px -25px rgba(0, 0, 0, 0.3);
+}
