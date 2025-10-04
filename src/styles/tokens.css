@@ -1,0 +1,8 @@
+:root {
+  --color-background: #f3f3f3;
+  --color-foreground: #111111;
+  --color-muted: #d4d4d8;
+  --color-border: #e4e4e7;
+  --radius-2xl: 1.5rem;
+  --shadow-subtle: 0 20px 40px -24px rgba(0, 0, 0, 0.3);
+}
